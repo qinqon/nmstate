@@ -23,6 +23,7 @@ pub struct NetworkPolicy {
     pub current: Option<NetworkState>,
 }
 
+#[cfg(feature = "query_apply")]
 impl TryFrom<NetworkPolicy> for NetworkState {
     type Error = NmstateError;
 

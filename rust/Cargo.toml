@@ -4,6 +4,7 @@ members = [
     "src/cli",
     "src/clib",
     "src/lib",
+    "src/web",
 ]
 
 [workspace.package]

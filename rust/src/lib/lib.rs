@@ -105,7 +105,6 @@ mod ovn;
 mod ovs;
 #[cfg(feature = "query_apply")]
 mod ovsdb;
-#[cfg(feature = "query_apply")]
 mod policy;
 #[cfg(feature = "query_apply")]
 mod query_apply;
@@ -176,7 +175,6 @@ pub use crate::ovn::{
 };
 pub(crate) use crate::ovs::MergedOvsDbGlobalConfig;
 pub use crate::ovs::{OvsDbGlobalConfig, OvsDbIfaceConfig};
-#[cfg(feature = "query_apply")]
 pub use crate::policy::{
     NetworkCaptureRules, NetworkPolicy, NetworkStateTemplate,
 };
